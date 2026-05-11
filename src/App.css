@@ -208,10 +208,10 @@ export default function App() {
         </div>
 
         {/* Desktop Grid / Mobile Stack */}
-        <div className="flex flex-col lg:flex-row gap-6 h-auto lg:h-[550px]">
+        <div className="flex flex-col lg:flex-row gap-6 h-auto lg:h-[600px]">
           
-          {/* Map Area (Responsive Height) */}
-          <div className="w-full lg:w-2/3 h-[350px] lg:h-full bg-slate-200 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 overflow-hidden relative z-0 group">
+          {/* Map Area (Responsive Height - UPGRADED FOR MOBILE) */}
+          <div className="w-full lg:w-2/3 h-[500px] sm:h-[600px] lg:h-full bg-slate-200 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 overflow-hidden relative z-0 group">
             <MapContainer center={[coords.lat, coords.lng]} zoom={16} style={{ height: '100%', width: '100%' }} zoomControl={false}>
               <TileLayer attribution='© OpenStreetMap' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
               <ChangeView center={[coords.lat, coords.lng]} />
